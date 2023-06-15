@@ -1,0 +1,22 @@
+/*Common styles*/
+@use "./styles/common";
+/*Header*/
+@use "./components/header/header";
+/*Banner-Hero*/
+@use "./components/banner/banner";
+/*Benefits*/
+@use "./components/benefits/benefits";
+/*Ingredients*/
+@use "./components/ingredients/ingredients";
+/*How its made*/
+@use "./components/how-made/how-made";
+/*Products*/
+@use "./components/products/products";
+/*Top-Sellers*/
+@use "./components/top-sellers/top-sellers";
+/*Reviews*/
+@use "./components/reviews/reviews";
+/*Subscribe*/
+@use "./components/subscribe/subscribe";
+/*Footer*/
+@use "./components/footer/footer";
