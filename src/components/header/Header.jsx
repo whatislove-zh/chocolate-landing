@@ -7,10 +7,14 @@ import Socials from "./Socials";
 export default function Header() {
   return (
     <header className="header">
-      <img className="header-logo" src={logo} alt="logo" />
-      <Navigation elementClass="header" />
-      <Socials />
-      <img className="header-burger" src={burger} alt="burger-menu" />
+      <div className="container">
+        <div className="header-wrapper">
+          <img className="header-logo" src={logo} alt="logo" />
+          <Navigation elementClass="header" />
+          <Socials elementColor="black" elementClass="header"  />
+          <img className="header-burger" src={burger} alt="burger-menu" />
+        </div>
+      </div>
     </header>
   );
 }
