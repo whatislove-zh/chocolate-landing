@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function Navigation({ elementClass }) {
-  console.log(elementClass);
   return (
     <nav>
       <ul className={elementClass + "-nav"}>

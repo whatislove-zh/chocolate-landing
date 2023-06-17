@@ -1,10 +1,18 @@
 import React from "react";
-import instagram from "../../assets/instagram.svg";
-import twitter from "../../assets/twitter.svg";
+import Instagram from "../../assets/instagram";
+import Twitter from "../../assets/twitter";
 
-export default function Socials({elementColor, elementClass}) {
-  return <div className={elementClass +"-socials"}>
-    <img className={"instagram-logo-" + elementColor} src={instagram} alt="instagram" />
-    <img className={"twitter-logo-" + elementColor} src={twitter} alt="twitter" />
-  </div>;
+//import twitter from "../../assets/twitter.svg";
+
+export default function Socials({ elementColor, elementClass }) {
+  return (
+    <div className={elementClass + "-socials"}>
+      <a className="instagram-logo" href="https:\\instagram.com">
+        <Instagram fill="white" stroke="black" />
+      </a>
+      <a className="twitter-logo" href="https:\\twitter.com">
+        <Twitter fill="white" stroke="black" />
+      </a>
+    </div>
+  );
 }

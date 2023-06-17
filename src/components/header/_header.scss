@@ -5,9 +5,26 @@
   display: flex;
   justify-content: space-between;
 }
-.header-nav {
+.header-nav,
+.header-socials {
   display: none;
 }
-.header-socials{
-    display: none;
+@media screen and (min-width: 1024px) {
+  .header-nav,
+  .header-socials {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav {
+  height: 100%;
+  list-style-type: none;
+}
+.header-nav-item {
+  margin-left: 24px;
+}
+
+.header-nav-link {
+  text-decoration: none;
 }
