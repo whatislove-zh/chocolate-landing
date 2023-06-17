@@ -2,16 +2,14 @@ import React from "react";
 import Instagram from "../../assets/instagram";
 import Twitter from "../../assets/twitter";
 
-//import twitter from "../../assets/twitter.svg";
-
-export default function Socials({ elementColor, elementClass }) {
+export default function Socials({ fill, stroke, elementClass }) {
   return (
     <div className={elementClass + "-socials"}>
       <a className="instagram-logo" href="https:\\instagram.com">
-        <Instagram fill="white" stroke="black" />
+        <Instagram fill={fill} stroke={stroke} />
       </a>
       <a className="twitter-logo" href="https:\\twitter.com">
-        <Twitter fill="white" stroke="black" />
+        <Twitter fill={fill} stroke={stroke} />
       </a>
     </div>
   );

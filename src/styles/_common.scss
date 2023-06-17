@@ -11,8 +11,10 @@ body {
   font-weight: $regular-weight;
 }
 .container {
-  margin: auto 20px;
+  margin: auto;
+  max-width: $lg;
+  padding: 0 20px;
 }
-.instagram-logo{
-    margin-right: 18px;
+.instagram-logo {
+  margin-right: 18px;
 }

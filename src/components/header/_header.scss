@@ -1,3 +1,5 @@
+@import "../../styles/variables";
+
 .header {
   margin: 20px auto 14px auto;
 }
@@ -25,6 +27,49 @@
   margin-left: 24px;
 }
 
-.header-nav-link {
+.header-nav-link,
+.menu-nav-link {
   text-decoration: none;
+  font-weight: $medium-weight;
+}
+.header-burger {
+  cursor: pointer;
+}
+
+/*aside menu styles*/
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background: #1e1823;
+  transition: all 0.5s ease;
+  @include menu-width;
+}
+
+.menu-close {
+  cursor: pointer;
+  float: right;
+  margin: 20px;
+}
+.menu-nav {
+  list-style-type: none;
+  width: max-content;
+  margin: 136px auto 0 auto;
+  text-align: center;
+}
+.menu-nav-item {
+  margin-bottom: 24px;
+}
+.menu-nav-link {
+  color: $white-color;
+  &:hover {
+    color: $orange-color;
+  }
+}
+.menu-socials {
+  position: absolute;
+  bottom: 0;
+  margin: 20px;
 }

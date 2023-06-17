@@ -1,3 +1,21 @@
 $bold-weight: 600;
 $medium-weight: 500;
 $regular-weight: 400;
+
+$black-color: #111111;
+$dark-purple-color: #1e1823;
+$orange-color: #fd9222;
+$white-color: #fafafa;
+
+$sm: 375px;
+$md: 768px;
+$lg: 1200px;
+
+@mixin menu-width() {
+  @media screen and (min-width: 0) {
+    width: 220px;
+  }
+  @media screen and (min-width: $md) {
+    width: 290px;
+  }
+}
