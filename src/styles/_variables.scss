@@ -10,12 +10,3 @@ $white-color: #fafafa;
 $sm: 375px;
 $md: 768px;
 $lg: 1200px;
-
-@mixin menu-width() {
-  @media screen and (min-width: 0) {
-    width: 220px;
-  }
-  @media screen and (min-width: $md) {
-    width: 290px;
-  }
-}

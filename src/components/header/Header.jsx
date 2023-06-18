@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import logo from "../../assets/logo.svg";
 import burger from "../../assets/menu-03.svg";
 import Navigation from "./Navigation";
@@ -6,9 +6,15 @@ import Socials from "./Socials";
 import AsideMenu from "./AsideMenu";
 
 export default function Header() {
-  const showMobileMenu = () => {};
+  const [menuWidth, setMenuWidth] = useState(0);
+  const headerRef = useRef();
+
+  const showMobileMenu = () => {
+    setMenuWidth(headerRef.current.clientWidth > 375 ? 290 : 220);
+  };
+
   return (
-    <header className="header">
+    <header ref={headerRef} className="header">
       <div className="container">
         <div className="header-wrapper">
           <a href="/home">
@@ -24,7 +30,7 @@ export default function Header() {
           />
         </div>
       </div>
-      <AsideMenu />
+      <AsideMenu menuWidth={menuWidth} setMenuWidth={setMenuWidth} />
     </header>
   );
 }
