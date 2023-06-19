@@ -5,11 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   color: black;
-}
-body {
   font-family: "Montserrat", sans-serif;
   font-weight: $regular-weight;
+  font-size: 14px;
 }
+
 .container {
   margin: auto;
   max-width: $lg;
@@ -22,3 +22,42 @@ body {
 .twitter-logo {
   height: 24px;
 }
+
+.common-button {
+  height: 41px;
+  color: $white-color;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: $bold-weight;
+}
+
+.orange-button {
+  width: 120px;
+  background: $orange-color;
+  border: none;
+  &:hover {
+    background: #fcf1e0;
+    color: $orange-color;
+  }
+}
+.clear-button {
+  width: 159px;
+  background: none;
+  border: 1px solid white;
+  &:hover {
+    color: $orange-color;
+    border: 1px solid $orange-color;
+  }
+}
+
+.review-button {
+  width: 222px;
+}
+.subscribe-button {
+  width: 172px;
+}
+
+.banner-scroll {
+  display: flex;
+}
+
