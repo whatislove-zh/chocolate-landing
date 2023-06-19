@@ -1,0 +1,72 @@
+@import "../../styles/variables";
+
+.banner-wrapper {
+  height: 620px;
+  width: 335px;
+  margin: auto;
+  background: url("../../assets/chocolate-mobile.png");
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 20px;
+}
+@media screen and (min-width: $md) {
+  .banner-wrapper {
+    height: 890px;
+    width: 704px;
+    background: url("../../assets/chocolate-tablet.png");
+  }
+}
+@media screen and (min-width: $lg) {
+  .banner-wrapper {
+    height: 600px;
+    width: 1136px;
+    background: url("../../assets/chocolate-desktop.png");
+  }
+}
+
+.banner-buttons {
+  display: flex;
+  margin: 32px 0;
+}
+.buy-button {
+  margin-right: 14px;
+}
+
+.banner-text {
+  color: $white-color;
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: $md) {
+  .banner-text {
+    width: 484px;
+    font-size: 28px;
+  }
+}
+
+.scroll-text {
+  color: $white-color;
+  margin-right: 12px;
+}
+.scroll-button {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: $white-color;
+}
+.banner-scroll {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: $md) {
+  .banner-bottom-block {
+    display: flex;
+    justify-content: space-between;
+  }
+}
