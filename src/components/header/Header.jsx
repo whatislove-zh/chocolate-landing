@@ -17,7 +17,7 @@ export default function Header() {
     <header ref={headerRef} className="header">
       <div className="container">
         <div className="header-wrapper">
-          <a href="/home">
+          <a className="header-logo-link" href="/home">
             <img className="header-logo" src={logo} alt="logo" />
           </a>
           <Navigation elementClass="header" />

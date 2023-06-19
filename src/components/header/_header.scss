@@ -6,7 +6,13 @@
 .header-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+.header-logo-link {
+  height: 22px;
+}
+
 .header-nav,
 .header-socials {
   display: none;
@@ -53,7 +59,7 @@
   margin: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .menu-close {
+  .header-burger {
     display: none;
   }
 }
