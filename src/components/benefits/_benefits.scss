@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.benefits-section {
+  margin-top: 72px;
+  background: $dark-purple-color;
+
+  .benefits-wrapper {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .benefits-item {
+    width: 308px;
+    margin-bottom: 20px;
+    padding-right: 28px;
+    border-right: 1px solid $white-color;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .benefits-text,
+  .benefits-header {
+    color: $white-color;
+  }
+
+  .benefits-header {
+    font-size: 18px;
+    font-weight: $bold-weight;
+    margin: 22px 0 18px 0;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .benefits-section {
+    .benefits-item {
+      border-right: none;
+    }
+  }
+}
