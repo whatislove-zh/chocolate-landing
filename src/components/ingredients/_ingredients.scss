@@ -43,17 +43,41 @@
   justify-content: center;
 }
 .cards-item {
+  position: relative;
   min-width: 100%;
   display: flex;
   justify-content: center;
+
+  &:hover {
+    .front-card {
+      opacity: 0;
+      transform: rotateY(-180deg);
+    }
+    .overlay-card {
+      opacity: 1;
+      transform: rotateY(0);
+    }
+  }
 }
 
-.front-card {
+.front-card,
+.overlay-card {
   width: 335px;
   height: 270px;
   padding: 28px;
   border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.front-card {
   margin-bottom: 20px;
+}
+
+.overlay-card {
+  height: calc(270px - 28px);
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transform: rotateY(-180deg);
 }
 
 @media screen and (min-width: $md) {
@@ -74,7 +98,8 @@
         margin-right: 0;
       }
     }
-    .front-card {
+    .front-card,
+    .overlay-card {
       width: 270px;
       height: 270px;
     }
@@ -105,4 +130,34 @@
 }
 .purple-card {
   background: $dark-purple-color;
+}
+
+/*overlay styles*/
+.overlay-header {
+  font-weight: $bold-weight;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.overlay-benefits {
+  display: flex;
+  margin-bottom: 16px;
+}
+.orange-benefit {
+  padding: 6px 16px;
+  background: $orange-color;
+  border-radius: 35px;
+  margin-right: 6px;
+}
+
+.clear-benefit {
+  padding: 6px 16px;
+  border: 1px solid $orange-color;
+  border-radius: 35px;
+}
+@media screen and (min-width: $lg) {
+  .orange-benefit,
+  .clear-benefit {
+    font-size: 10px;
+  }
 }
