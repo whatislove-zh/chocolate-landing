@@ -1,0 +1,163 @@
+@import "../../styles/variables";
+
+.ingredients-section {
+  margin-top: 72px;
+}
+
+.ingredients-head {
+  max-width: 486px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.ingredients-header,
+.orange-text {
+  font-weight: $bold-weight;
+  font-size: 20px;
+}
+.ingredients-header {
+  width: 283px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.orange-text {
+  color: $orange-color;
+}
+
+@media screen and (min-width: $md) {
+  .ingredients-header {
+    width: 411px;
+  }
+  .ingredients-header,
+  .orange-text {
+    font-size: 24px;
+  }
+}
+
+/*cards styles*/
+.ingredients-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards-item {
+  position: relative;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    .front-card {
+      opacity: 0;
+      transform: rotateY(-180deg);
+    }
+    .overlay-card {
+      opacity: 1;
+      transform: rotateY(0);
+    }
+  }
+}
+
+.front-card,
+.overlay-card {
+  width: 335px;
+  height: 270px;
+  padding: 28px;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+}
+.front-card {
+  margin-bottom: 20px;
+}
+
+.overlay-card {
+  height: calc(270px - 28px);
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  transform: rotateY(-180deg);
+}
+
+@media screen and (min-width: $md) {
+  .cards-item {
+    min-width: calc(50% - 32px);
+
+    &:nth-child(2n + 1) {
+      margin-right: 32px;
+    }
+  }
+}
+@media screen and (min-width: $lg) {
+  .ingredients-cards {
+    .cards-item {
+      min-width: 270px;
+      margin-right: 19px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .front-card,
+    .overlay-card {
+      width: 270px;
+      height: 270px;
+    }
+  }
+}
+
+.front-img {
+  width: 224px;
+  height: 171px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.front-text {
+  font-weight: $bold-weight;
+  color: $white-color;
+}
+
+.orange-card {
+  background: $orange-color;
+}
+.white-card {
+  border: 1px solid $orange-color;
+
+  .front-text {
+    color: $black-color;
+  }
+}
+.purple-card {
+  background: $dark-purple-color;
+}
+
+/*overlay styles*/
+.overlay-header {
+  font-weight: $bold-weight;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 8px;
+}
+.overlay-benefits {
+  display: flex;
+  margin-bottom: 16px;
+}
+.orange-benefit {
+  padding: 6px 16px;
+  background: $orange-color;
+  border-radius: 35px;
+  margin-right: 6px;
+}
+
+.clear-benefit {
+  padding: 6px 16px;
+  border: 1px solid $orange-color;
+  border-radius: 35px;
+}
+@media screen and (min-width: $lg) {
+  .orange-benefit,
+  .clear-benefit {
+    font-size: 10px;
+  }
+}
