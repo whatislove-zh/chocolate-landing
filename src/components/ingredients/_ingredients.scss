@@ -35,3 +35,74 @@
     font-size: 24px;
   }
 }
+
+/*cards styles*/
+.ingredients-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cards-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.front-card {
+  width: 335px;
+  height: 270px;
+  padding: 28px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: $md) {
+  .cards-item {
+    min-width: calc(50% - 32px);
+
+    &:nth-child(2n + 1) {
+      margin-right: 32px;
+    }
+  }
+}
+@media screen and (min-width: $lg) {
+  .ingredients-cards {
+    .cards-item {
+      min-width: 270px;
+      margin-right: 19px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .front-card {
+      width: 270px;
+      height: 270px;
+    }
+  }
+}
+
+.front-img {
+  width: 224px;
+  height: 171px;
+  margin: auto;
+  margin-bottom: 25px;
+}
+
+.front-text {
+  font-weight: $bold-weight;
+  color: $white-color;
+}
+
+.orange-card {
+  background: $orange-color;
+}
+.white-card {
+  border: 1px solid $orange-color;
+
+  .front-text {
+    color: $black-color;
+  }
+}
+.purple-card {
+  background: $dark-purple-color;
+}

@@ -1,4 +1,7 @@
-import React from "react";
+import milkChocolate from "../../assets/ingredients-milk-chocolate.png";
+import hazelnut from "../../assets/ingredients-hazelnut.png";
+import chocolateCrops from "../../assets/ingredients-chocolate-crops.png";
+import milk from "../../assets/ingredients-milk.png";
 
 export default function Ingredients() {
   return (
@@ -20,19 +23,54 @@ export default function Ingredients() {
           </div>
           <div className="ingredients-cards">
             <div className="cards-item">
-              <div className="front-card"></div>
+              <div className="front-card orange-card">
+                <div className="front-img">
+                  <img
+                    src={milkChocolate}
+                    alt="milkChocolate"
+                    width="224px"
+                    height="171px"
+                  />
+                </div>
+                <p className="front-text">MILK CHOCOLATE</p>
+              </div>
               <div className="overlay-card"></div>
             </div>
             <div className="cards-item">
-              <div className="front-card"></div>
+              <div className="front-card white-card">
+                <div className="front-img">
+                  <img src={milk} alt="milk" width="224px" height="171px" />
+                </div>
+                <p className="front-text">MILK</p>
+              </div>
               <div className="overlay-card"></div>
             </div>
             <div className="cards-item">
-              <div className="front-card"></div>
+              <div className="front-card purple-card">
+                <div className="front-img">
+                  <img
+                    src={hazelnut}
+                    alt="hazelnut"
+                    width="224px"
+                    height="171px"
+                  />
+                </div>
+                <p className="front-text">NUTS</p>
+              </div>
               <div className="overlay-card"></div>
             </div>
             <div className="cards-item">
-              <div className="front-card"></div>
+              <div className="front-card white-card">
+                <div className="front-img">
+                  <img
+                    src={chocolateCrops}
+                    alt="crops"
+                    width="224px"
+                    height="171px"
+                  />
+                </div>
+                <p className="front-text">SEMI - SWEET CHOCOLATE</p>
+              </div>
               <div className="overlay-card"></div>
             </div>
           </div>
