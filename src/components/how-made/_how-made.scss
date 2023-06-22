@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+.how-made-section {
+  margin-top: 72px;
+}
+.how-made-header {
+  width: max-content;
+  margin: auto;
+
+  margin-bottom: 32px;
+}
+
+.how-made-video {
+  position: relative;
+  width: 335px;
+  height: 500px;
+  border-radius: 15px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: url("../../assets/how-made-mobile.png");
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-made-play {
+  cursor: pointer;
+}
+
+.how-made-recept {
+  background-color: $white-color;
+  padding: 20px 14px;
+  border-radius: 15px;
+}
+.recept-header {
+  font-size: 18px;
+  font-weight: $bold-weight;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.how-made-step-list {
+  list-style-type: none;
+}
+.step-list-item {
+  margin-bottom: 18px;
+  position: relative;
+  margin-left: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #eceded;
+    border-radius: 50%;
+    background: #4c4c4c;
+    margin-left: -16px;
+    margin-top: 5px;
+  }
+}
