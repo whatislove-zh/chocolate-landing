@@ -60,3 +60,12 @@
 .banner-scroll {
   display: flex;
 }
+
+.orange-text {
+  color: $orange-color;
+}
+.header-text,
+.orange-text {
+  font-weight: $bold-weight;
+  font-size: 20px;
+}

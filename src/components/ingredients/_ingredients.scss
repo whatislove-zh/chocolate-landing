@@ -11,19 +11,10 @@
   margin-bottom: 50px;
 }
 
-.ingredients-header,
-.orange-text {
-  font-weight: $bold-weight;
-  font-size: 20px;
-}
 .ingredients-header {
   width: 283px;
   margin: auto;
   margin-bottom: 24px;
-}
-
-.orange-text {
-  color: $orange-color;
 }
 
 @media screen and (min-width: $md) {
