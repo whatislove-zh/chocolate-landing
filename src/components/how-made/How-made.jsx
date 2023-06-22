@@ -1,4 +1,4 @@
-import React from "react";
+import play from "../../assets/play.png";
 
 export default function HowMade() {
   return (
@@ -8,7 +8,9 @@ export default function HowMade() {
           <h2 className="how-made-header common-header">
             HOW IT'S <span className="orange-text">MADE?</span>
           </h2>
-          <div className="how-made-video"></div>
+          <div className="how-made-video">
+            <img className="how-made-play" src={play} alt="play" />
+          </div>
           <div className="how-made-recept">
             <h2 className="recept-header">
               Try our chocolates today and discover the perfect balance of
