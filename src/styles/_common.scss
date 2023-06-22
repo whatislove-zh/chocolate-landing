@@ -5,9 +5,12 @@
   padding: 0;
   box-sizing: border-box;
   color: $black-color;
-  font-family: "Montserrat", sans-serif;
   font-weight: $regular-weight;
   font-size: 14px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: $white-color;
 }
 
 .container {
@@ -72,4 +75,11 @@
 }
 .orange-text {
   color: $orange-color;
+}
+
+@media screen and (min-width: $md) {
+  .common-header,
+  .orange-text {
+    font-size: 24px;
+  }
 }
