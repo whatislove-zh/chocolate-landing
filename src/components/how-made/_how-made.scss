@@ -24,6 +24,39 @@
   align-items: center;
 }
 
+@media screen and (min-width: $md) {
+  .how-made-video {
+    background: url("../../assets/how-made-tablet.png");
+    width: 614px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: $lg) {
+  .how-made-section {
+    .recept-header {
+      margin-bottom: 28px;
+    }
+
+    .how-made-video {
+      background: url("../../assets/how-made-desktop.png");
+      width: 600px;
+      height: 400px;
+      margin-right: 20px;
+    }
+    .how-made-group {
+      display: flex;
+    }
+    .how-made-recept {
+      width: 516px;
+      height: 400px;
+      padding: 32px;
+    }
+    .step-list-item {
+      margin-bottom: 24px;
+    }
+  }
+}
+
 .how-made-play {
   cursor: pointer;
 }
@@ -44,6 +77,7 @@
   list-style-type: none;
 }
 .step-list-item {
+  line-height: 18px;
   margin-bottom: 18px;
   position: relative;
   margin-left: 16px;
