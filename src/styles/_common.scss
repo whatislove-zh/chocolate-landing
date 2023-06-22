@@ -60,3 +60,16 @@
 .banner-scroll {
   display: flex;
 }
+
+.common-header {
+  margin: auto;
+}
+
+.common-header,
+.orange-text {
+  font-weight: $bold-weight;
+  font-size: 20px;
+}
+.orange-text {
+  color: $orange-color;
+}

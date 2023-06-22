@@ -9,7 +9,7 @@ export default function Ingredients() {
       <div className="container">
         <div className="ingredients-wrapper">
           <div className="ingredients-head">
-            <h2 className="ingredients-header">
+            <h2 className="ingredients-header common-header">
               IT ALL ADDS UP TO ONE EXCEPTIONAL{" "}
               <span className="orange-text">TASTE</span> SENSATION
             </h2>
