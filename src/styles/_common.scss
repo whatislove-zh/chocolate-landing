@@ -61,11 +61,15 @@
   display: flex;
 }
 
-.orange-text {
-  color: $orange-color;
+.common-header {
+  margin: auto;
 }
-.header-text,
+
+.common-header,
 .orange-text {
   font-weight: $bold-weight;
   font-size: 20px;
+}
+.orange-text {
+  color: $orange-color;
 }
