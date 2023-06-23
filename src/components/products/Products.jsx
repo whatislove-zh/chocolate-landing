@@ -1,4 +1,5 @@
 import React from "react";
+import ProductSlider from "./ProductSlider";
 
 export default function Products() {
   return (
@@ -8,9 +9,8 @@ export default function Products() {
           <h2 className="products-header common-header">
             OUR <span className="orange-text">PRODUCTS</span>
           </h2>
-          <div className="products-slider">
-            
-          </div>
+
+          <ProductSlider />
         </div>
       </div>
     </section>
