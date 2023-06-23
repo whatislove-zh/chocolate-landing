@@ -28,17 +28,17 @@
     width: 28px;
     border-radius: 100px;
   }
+  .swiper-img {
+    width: 230px;
+    height: 201px;
+    margin-bottom: 8px;
+  }
 }
 .products-header {
   width: max-content;
   margin-bottom: 32px;
 }
 
-.swiper-img {
-  width: 230px;
-  height: 201px;
-  margin-bottom: 8px;
-}
 .swiper-header {
   font-size: 18px;
   font-weight: $bold-weight;
