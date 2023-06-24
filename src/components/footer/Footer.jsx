@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
           </div>
           <hr />
-          <Navigation />
+          <Navigation elementClass="footer" />
         </div>
       </div>
     </footer>
