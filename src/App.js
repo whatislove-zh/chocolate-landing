@@ -8,6 +8,7 @@ import TopSellers from "./components/top-sellers/Top-sellers.jsx";
 import Reviews from "./components/reviews/Reviews.jsx";
 import Subscribe from "./components/subscribe/Subscribe.jsx";
 import Footer from "./components/footer/Footer.jsx";
+import PopUpBuy from "./components/pop-up-windows/PopUpBuy";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
       <Reviews />
       <Subscribe />
       <Footer />
+
+      <PopUpBuy />
     </>
   );
 }

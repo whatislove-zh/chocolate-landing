@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.buy-form {
+  padding: 32px 24px;
+}
+.choice {
+  width: 263px;
+  height: 85px;
+  margin-bottom: 16px;
+
+  border-radius: 15px;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    background: white;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+
+    padding: 8px 16px;
+    margin-bottom: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  input[type="radio"]:checked + label {
+    background: $orange-color;
+  }
+}
+
+.chocolate-weight {
+  width: max-content;
+  font-weight: $bold-weight;
+  padding: 6px 16px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  background: $whet-color;
+}
+
+input[type="radio"]:checked + p.chocolate-weight {
+  background: hsla(150, 75%, 50%, 1);
+  color: hsla(215, 0%, 100%, 1);
+}
