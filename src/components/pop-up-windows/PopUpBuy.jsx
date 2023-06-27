@@ -63,18 +63,24 @@ export default function PopUpBuy() {
               <label className="input-text-label" htmlFor="phone">
                 Phone number
               </label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Phone number"
-              />
+
+              <div className="phone-wrapper">
+                <span className="phone-span">+380</span>
+                <input
+                  className="phone-input"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Phone number"
+                />
+              </div>
             </div>
             <div className="personal-info-item">
               <label className="input-text-label" htmlFor="card">
                 Card number
               </label>
               <input
+              className="mastercard"
                 type="text"
                 id="card"
                 name="card"
