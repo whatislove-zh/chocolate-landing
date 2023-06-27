@@ -1,7 +1,31 @@
 @import "../../styles/variables";
 
-.buy-form {
+// .pop-up-buy-wrapper{
+//   width: 100vw;
+//   height: 100vh;
+//   overflow: hidden;
+// }
+
+.pop-up-buy {
+  width: 311px;
+
+  border: 1px solid black;
+  border-radius: 15px;
   padding: 32px 24px;
+  margin: auto;
+}
+
+.buy-form-header {
+  width: max-content;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+// .buy-form {
+// }
+
+.radio-choices {
+  margin-bottom: 32px;
 }
 .choice {
   width: 263px;
@@ -45,7 +69,36 @@
   background: $whet-color;
 }
 
-input[type="radio"]:checked + p.chocolate-weight {
-  background: hsla(150, 75%, 50%, 1);
-  color: hsla(215, 0%, 100%, 1);
+.personal-info-item {
+  margin-bottom: 18px;
+
+  input[type="text"],
+  .textarea-comment {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid rgba(64, 64, 64, 0.3);
+    border-radius: 8px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::placeholder {
+      color: rgba(64, 64, 64, 0.3);
+    }
+  }
+  .textarea-comment {
+    height: 91px;
+    resize: none;
+  }
+}
+
+.input-text-label {
+  display: inline-block;
+  color: $black-color;
+  font-size: 12px;
+  font-weight: $medium-weight;
+
+  margin-bottom: 8px;
 }
