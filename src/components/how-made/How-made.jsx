@@ -2,7 +2,7 @@ import play from "../../assets/play.png";
 
 export default function HowMade() {
   return (
-    <section className="how-made-section">
+    <section id="how" className="how-made-section">
       <div className="container">
         <div className="how-made-wrapper">
           <h2 className="how-made-header common-header">

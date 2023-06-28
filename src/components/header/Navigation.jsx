@@ -10,22 +10,22 @@ export default function Navigation({ elementClass }) {
           </a>
         </li>
         <li className={elementClass + "-nav-item"}>
-          <a className={elementClass + "-nav-link"} href="/#">
+          <a className={elementClass + "-nav-link"} href="#how">
             How it's made?
           </a>
         </li>
         <li className={elementClass + "-nav-item"}>
-          <a className={elementClass + "-nav-link"} href="/#">
+          <a className={elementClass + "-nav-link"} href="#prod">
             Our products
           </a>
         </li>
         <li className={elementClass + "-nav-item"}>
-          <a className={elementClass + "-nav-link"} href="/#">
+          <a className={elementClass + "-nav-link"} href="#top">
             Top sellers
           </a>
         </li>
         <li className={elementClass + "-nav-item"}>
-          <a className={elementClass + "-nav-link"} href="/#">
+          <a className={elementClass + "-nav-link"} href="#review">
             Chocolate is loved
           </a>
         </li>

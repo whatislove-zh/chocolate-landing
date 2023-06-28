@@ -4,7 +4,7 @@ import Socials from "../header/Socials";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer id="footer" className="footer">
       <div className="container">
         <div className="footer-wrapper">
           <div className="footer-block">
