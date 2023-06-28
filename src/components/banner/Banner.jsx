@@ -1,17 +1,10 @@
-import { useState } from "react";
 import PopUpBuy from "../pop-up-windows/PopUpBuy";
+import usePopShow from "../pop-up-windows/usePopShow";
 
 export default function Banner() {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const showHideModal = () => {
-    setModalOpen(!modalOpen);
-    if (modalOpen) {
-      document.body.classList.remove('overflow');
-    } else {
-      document.body.classList.add('overflow');
-    }
-  };
+  const modalInfo = usePopShow();
+  const showHideModal = modalInfo.show;
+  const modalOpen = modalInfo.modal;
 
   return (
     <section className="banner-section">
