@@ -1,6 +1,11 @@
-import React from "react";
+import usePopShow from "../pop-up-windows/usePopShow";
+import PopSubscribe from "../pop-up-windows/PopSubscribe";
 
 export default function Subscribe() {
+  const modalInfo = usePopShow();
+  const showHideModal = modalInfo.show;
+  const modalOpen = modalInfo.modal;
+
   return (
     <section className="subscribe-section">
       <div className="container">
@@ -12,11 +17,15 @@ export default function Subscribe() {
             Made with only the finest ingredients and handcrafted with the
             utmost care, each piece is a work of art that is sure to please.
           </p>
-          <button className="subscribe-button common-button orange-button">
+          <button
+            className="subscribe-button common-button orange-button"
+            onClick={showHideModal}
+          >
             Subscribe
           </button>
         </div>
       </div>
+      {modalOpen && <PopSubscribe showHideModal={showHideModal} />}
     </section>
   );
 }
