@@ -19,10 +19,23 @@
   position: relative;
 }
 
+.pop-up-subscribe {
+  background-image: url("../../assets/subscribe-mobile.png");
+  background-repeat: no-repeat;
+  background-position-y: top;
+  padding-top: 202px;
+}
+
 @media screen and (min-width: $md) {
   .pop-up {
     width: 600px;
     padding: 50px;
+  }
+  .pop-up-subscribe {
+    width: 538px;
+    background-image: url("../../assets/subscribe-tablet.png");
+    background-position-x: center;
+    padding-top: 228px;
   }
   .radio-choices {
     display: flex;
@@ -203,4 +216,43 @@
   font-weight: $medium-weight;
 
   margin-bottom: 8px;
+}
+
+.subscribe-info {
+  display: flex;
+
+  .personal-info-item {
+    width: 100%;
+
+    input[type="text"] {
+      border-radius: 30px 0 0 30px;
+      height: 52px;
+    }
+  }
+  .subscribe-pop-up-btn {
+    height: 52px;
+    margin-left: -25px;
+    z-index: 1;
+  }
+}
+
+.wrap {
+  display: inline-block;
+  &::before {
+    content: n;
+    padding: 1px 8px;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .subscribe-info {
+    .personal-info-item {
+      input[type="text"] {
+        border-radius: 30px;
+      }
+    }
+    .subscribe-pop-up-btn {
+      margin-left: 10px;
+    }
+  }
 }
