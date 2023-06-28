@@ -8,22 +8,61 @@
   top: 0;
   background: rgba(0, 0, 0, 0.595);
   z-index: 5;
-  display: none;
 }
 
 .pop-up-buy {
   width: 311px;
-
   background: $whet-color;
   border-radius: 15px;
   padding: 32px 24px;
-  margin: auto;
+  margin: 40px auto 40px;
+  position: relative;
+}
+
+@media screen and (min-width: $md) {
+  .pop-up-buy {
+    width: 600px;
+    padding: 50px;
+  }
+  .radio-choices {
+    display: flex;
+    justify-content: space-between;
+    .choice {
+      width: 160px;
+      label {
+        flex-direction: column;
+        padding: 24px 20px;
+      }
+      .control-img {
+        width: 120px;
+        height: 107px;
+      }
+    }
+  }
+  .personal-info-item {
+    input[type="text"].input-surname,
+    input[type="text"].input-name {
+      width: calc(50% - 10px);
+    }
+  }
+  .input-name {
+    margin-right: 20px;
+  }
 }
 
 .buy-form-header {
   width: max-content;
   margin: auto;
   margin-bottom: 32px;
+}
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 14px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 }
 
 // .buy-form {
@@ -34,7 +73,7 @@
 }
 .choice {
   width: 263px;
-  height: 85px;
+
   margin-bottom: 16px;
 
   border-radius: 15px;
@@ -44,7 +83,6 @@
   }
 
   label {
-    display: block;
     height: 100%;
     width: 100%;
 
@@ -107,7 +145,6 @@
 
   input[type="text"].phone-input {
     display: block;
-    width: 171px;
     border-left: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -115,8 +152,8 @@
   .phone-span {
     position: relative;
     display: block;
-    width: 100%;
-    padding: 14px 0 14px 50px;
+
+    padding: 14px 8px 14px 50px;
     border: 1px solid rgba(64, 64, 64, 0.3);
 
     background: $white-color url("../../assets/ukraine.svg") no-repeat;

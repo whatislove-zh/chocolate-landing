@@ -2,34 +2,54 @@ import chocolate100g from "../../assets/pop-up-100g.png";
 import chocolate200g from "../../assets/pop-up-200g.png";
 import chocolate300g from "../../assets/pop-up-300g.png";
 
-export default function PopUpBuy() {
+import X from "../../assets/x-close.svg";
+
+export default function PopUpBuy({ showHideModal }) {
   return (
     <div className="pop-up-buy-wrapper">
       <div className="pop-up-buy">
         <h2 className="buy-form-header common-header">
           <span className="orange-text">BUY </span>NOW
         </h2>
+        <img
+          src={X}
+          alt="close"
+          className="close-button"
+          onClick={showHideModal}
+        />
 
         <form action="#" className="buy-form">
           <div className="radio-choices">
             <div className="choice">
               <input type="radio" id="control_01" name="select" value="100" />
               <label htmlFor="control_01">
-                <img src={chocolate100g} alt="chocolate-100g" />
+                <img
+                  className="control-img"
+                  src={chocolate100g}
+                  alt="chocolate-100g"
+                />
                 <p className="chocolate-weight">100g</p>
               </label>
             </div>
             <div className="choice">
               <input type="radio" id="control_02" name="select" value="200" />
               <label htmlFor="control_02">
-                <img src={chocolate200g} alt="chocolate-200g" />
+                <img
+                  className="control-img"
+                  src={chocolate200g}
+                  alt="chocolate-200g"
+                />
                 <p className="chocolate-weight">200g</p>
               </label>
             </div>
             <div className="choice">
               <input type="radio" id="control_03" name="select" value="300" />
               <label htmlFor="control_03">
-                <img src={chocolate300g} alt="chocolate-300g" />
+                <img
+                  className="control-img"
+                  src={chocolate300g}
+                  alt="chocolate-300g"
+                />
                 <p className="chocolate-weight">300g</p>
               </label>
             </div>
@@ -40,8 +60,15 @@ export default function PopUpBuy() {
               <label className="input-text-label" htmlFor="name">
                 Personal information
               </label>
-              <input type="text" id="name" name="name" placeholder="Name" />
               <input
+                className="input-name"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+              />
+              <input
+                className="input-surname"
                 type="text"
                 id="surname"
                 name="surname"
@@ -80,7 +107,7 @@ export default function PopUpBuy() {
                 Card number
               </label>
               <input
-              className="mastercard"
+                className="mastercard"
                 type="text"
                 id="card"
                 name="card"
