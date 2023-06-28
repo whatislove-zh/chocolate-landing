@@ -1,4 +1,18 @@
+import { useState } from "react";
+import PopUpBuy from "../pop-up-windows/PopUpBuy";
+
 export default function Banner() {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const showHideModal = () => {
+    setModalOpen(!modalOpen);
+    if (modalOpen) {
+      document.body.classList.remove('overflow');
+    } else {
+      document.body.classList.add('overflow');
+    }
+  };
+
   return (
     <section className="banner-section">
       <div className="container">
@@ -9,7 +23,10 @@ export default function Banner() {
           </h2>
           <div className="banner-bottom-block">
             <div className="banner-buttons">
-              <button className="orange-button common-button buy-button">
+              <button
+                className="orange-button common-button buy-button"
+                onClick={showHideModal}
+              >
                 Buy now
               </button>
               <button className="clear-button common-button">
@@ -23,6 +40,7 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      {modalOpen && <PopUpBuy showHideModal={showHideModal} />}
     </section>
   );
 }
