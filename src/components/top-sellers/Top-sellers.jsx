@@ -2,9 +2,16 @@ import topSellers1 from "../../assets/sellers_1.png";
 import topSellers2 from "../../assets/sellers_2.png";
 import topSellers3 from "../../assets/sellers_3.png";
 
+import usePopShow from "../pop-up-windows/usePopShow";
+import PopUpBuy from "../pop-up-windows/PopUpBuy";
+
 export default function TopSellers() {
+  const modalInfo = usePopShow();
+  const showHideModal = modalInfo.show;
+  const modalOpen = modalInfo.modal;
+
   return (
-    <section className="top-sellers-section">
+    <section id="top" className="top-sellers-section">
       <div className="container">
         <h2 className="top-sellers-header common-header">
           <span className="orange-text">TOP </span>SELLERS
@@ -33,12 +40,16 @@ export default function TopSellers() {
                 alt="top-sell"
               />
             </div>
-            <button className="top-sellers-button common-button orange-button">
+            <button
+              onClick={showHideModal}
+              className="top-sellers-button common-button orange-button"
+            >
               Buy now
             </button>
           </div>
         </div>
       </div>
+      {modalOpen && <PopUpBuy showHideModal={showHideModal} />}
     </section>
   );
 }

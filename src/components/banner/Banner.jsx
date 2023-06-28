@@ -22,13 +22,17 @@ export default function Banner() {
               >
                 Buy now
               </button>
-              <button className="clear-button common-button">
-                How it's made
-              </button>
+              <a href="#how">
+                <button className="clear-button common-button">
+                  How it's made
+                </button>
+              </a>
             </div>
             <div className="banner-scroll">
               <p className="scroll-text">scroll down</p>
-              <button className="scroll-button">v</button>
+              <a href="#footer">
+                <button className="scroll-button">v</button>
+              </a>
             </div>
           </div>
         </div>

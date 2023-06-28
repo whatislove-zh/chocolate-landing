@@ -8,7 +8,7 @@ export default function Reviews() {
   const showHideModal = modalInfo.show;
   const modalOpen = modalInfo.modal;
   return (
-    <section className="reviews-section">
+    <section id="review" className="reviews-section">
       <div className="container">
         <div className="reviews-wrapper">
           <h2 className="reviews-header common-header">
