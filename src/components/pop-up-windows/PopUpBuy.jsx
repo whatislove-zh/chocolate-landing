@@ -6,9 +6,9 @@ import X from "../../assets/x-close.svg";
 
 export default function PopUpBuy({ showHideModal }) {
   return (
-    <div className="pop-up-buy-wrapper">
-      <div className="pop-up-buy">
-        <h2 className="buy-form-header common-header">
+    <div className="pop-up-wrapper">
+      <div className="pop-up">
+        <h2 className="form-header common-header">
           <span className="orange-text">BUY </span>NOW
         </h2>
         <img
