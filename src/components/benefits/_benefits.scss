@@ -15,9 +15,23 @@
     width: 308px;
     margin-bottom: 20px;
     padding-right: 28px;
-    border-right: 1px solid $white-color;
+    position: relative;
+
+    &:nth-child(n) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 25%;
+        right: 0;
+        width: 1px;
+        background: white;
+        height: 50%;
+      }
+    }
     &:last-child {
-      border: none;
+      &::after {
+        content: none;
+      }
     }
   }
 
