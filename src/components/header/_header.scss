@@ -37,6 +37,10 @@
 .menu-nav-link {
   text-decoration: none;
   font-weight: $medium-weight;
+
+  &:hover {
+    color: $orange-color;
+  }
 }
 .header-burger {
   cursor: pointer;
@@ -80,12 +84,18 @@
 }
 .menu-nav-link {
   color: $white-color;
-  &:hover {
-    color: $orange-color;
-  }
 }
 .menu-socials {
   position: absolute;
   bottom: 0;
   margin: 20px;
+}
+
+.instagram-logo,
+.twitter-logo {
+  svg {
+    &:hover {
+      stroke: $orange-color;
+    }
+  }
 }
