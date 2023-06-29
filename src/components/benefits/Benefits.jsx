@@ -1,6 +1,4 @@
-import dollarSign from "../../assets/dollar.svg";
-import chocolateBar from "../../assets/chocolate-bar.svg";
-import spoon from "../../assets/spoon.svg";
+import sprite from "../../assets/icons.svg";
 
 export default function Benefits() {
   return (
@@ -8,11 +6,11 @@ export default function Benefits() {
       <div className="container">
         <div className="benefits-wrapper">
           <div className="benefits-item">
-            <img
-              className="benefits-icon"
-              src={chocolateBar}
-              alt="chocolate-bar"
-            />
+            <span className="benefits-icon">
+              <svg height="32px" width="32px">
+                <use href={sprite + "#contrast_chocolate-bar"} />
+              </svg>
+            </span>
             <h2 className="benefits-header">Unsurpassed taste</h2>
             <p className="benefits-text">
               Crafted with the finest quality cocoa beans and a dedication to
@@ -22,7 +20,12 @@ export default function Benefits() {
             </p>
           </div>
           <div className="benefits-item">
-            <img className="benefits-icon" src={dollarSign} alt="dollar-sign" />
+            <span className="benefits-icon">
+              <svg height="32px" width="32px">
+                <use href={sprite + "#coin"} />
+              </svg>
+            </span>
+
             <h2 className="benefits-header">Affordable price</h2>
             <p className="benefits-text">
               Indulge in high-quality chocolate without breaking the bank with
@@ -33,7 +36,11 @@ export default function Benefits() {
             </p>
           </div>
           <div className="benefits-item">
-            <img className="benefits-icon" src={spoon} alt="spoon" />
+            <span className="benefits-icon">
+              <svg height="32px" width="32px">
+                <use href={sprite + "#spoon"} />
+              </svg>
+            </span>
             <h2 className="benefits-header">Own production</h2>
             <p className="benefits-text">
               We take pride in our own production process, ensuring that every

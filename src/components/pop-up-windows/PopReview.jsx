@@ -1,4 +1,4 @@
-import X from "../../assets/x-close.svg";
+import sprite from "../../assets/icons.svg";
 
 export default function PopReview({ showHideModal }) {
   return (
@@ -8,12 +8,14 @@ export default function PopReview({ showHideModal }) {
           leave a review about
           <span className="orange-text"> our chocolate </span>
         </h2>
-        <img
-          src={X}
-          alt="close"
+        <svg
           className="close-button"
           onClick={showHideModal}
-        />
+          height="24px"
+          width="24px"
+        >
+          <use href={sprite + "#close-dark"} />
+        </svg>
         <div className="personal-info">
           <div className="personal-info-item">
             <input type="text" id="name" name="name" placeholder="Name" />

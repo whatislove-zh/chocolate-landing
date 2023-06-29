@@ -1,4 +1,4 @@
-import X from "../../assets/x-close-white.svg";
+import sprite from "../../assets/icons.svg";
 
 export default function PopSubscribe({ showHideModal }) {
   console.log("hello");
@@ -9,12 +9,14 @@ export default function PopSubscribe({ showHideModal }) {
           Explore our <span className="wrap orange-text">new chocolate</span>{" "}
           first!
         </h2>
-        <img
-          src={X}
-          alt="close"
+        <svg
           className="close-button"
           onClick={showHideModal}
-        />
+          height="24px"
+          width="24px"
+        >
+          <use href={sprite + "#close-dark"} />
+        </svg>
         <div className="personal-info subscribe-info">
           <div className="personal-info-item">
             <input

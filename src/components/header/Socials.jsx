@@ -1,15 +1,17 @@
-import React from "react";
-import Instagram from "../../assets/instagram";
-import Twitter from "../../assets/twitter";
+import sprite from "../../assets/icons.svg";
 
 export default function Socials({ fill, stroke, elementClass }) {
   return (
     <div className={elementClass + "-socials"}>
       <a className="instagram-logo" href="https:\\instagram.com">
-        <Instagram fill={fill} stroke={stroke} />
+        <svg fill={fill} stroke={stroke} height="24px" width="24px">
+          <use href={sprite + "#instagram"} />
+        </svg>
       </a>
       <a className="twitter-logo" href="https:\\twitter.com">
-        <Twitter fill={fill} stroke={stroke} />
+        <svg fill={fill} stroke={stroke} height="24px" width="24px">
+          <use href={sprite + "#twitter"} />
+        </svg>
       </a>
     </div>
   );
