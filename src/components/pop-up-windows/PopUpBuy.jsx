@@ -2,7 +2,7 @@ import chocolate100g from "../../assets/pop-up-100g.png";
 import chocolate200g from "../../assets/pop-up-200g.png";
 import chocolate300g from "../../assets/pop-up-300g.png";
 
-import X from "../../assets/x-close.svg";
+import sprite from "../../assets/icons.svg";
 
 export default function PopUpBuy({ showHideModal }) {
   return (
@@ -11,12 +11,15 @@ export default function PopUpBuy({ showHideModal }) {
         <h2 className="form-header common-header">
           <span className="orange-text">BUY </span>NOW
         </h2>
-        <img
-          src={X}
-          alt="close"
+
+        <svg
           className="close-button"
           onClick={showHideModal}
-        />
+          height="24px"
+          width="24px"
+        >
+          <use href={sprite + "#close-dark"} />
+        </svg>
 
         <form action="#" className="buy-form">
           <div className="radio-choices">

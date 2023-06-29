@@ -40,6 +40,8 @@
 }
 .header-burger {
   cursor: pointer;
+
+  stroke: black;
 }
 
 /*aside menu styles*/
@@ -51,12 +53,16 @@
   height: 100vh;
   background: #1e1823;
   transition: all 0.5s ease;
+  overflow: auto;
 }
 
 .menu-close {
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  top: 0;
+  right: 0;
   margin: 20px;
+  stroke: white;
 }
 @media screen and (min-width: 1024px) {
   .header-burger {

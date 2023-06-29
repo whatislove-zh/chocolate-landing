@@ -1,6 +1,8 @@
 import PopUpBuy from "../pop-up-windows/PopUpBuy";
 import usePopShow from "../pop-up-windows/usePopShow";
 
+import sprite from "../../assets/icons.svg";
+
 export default function Banner() {
   const modalInfo = usePopShow();
   const showHideModal = modalInfo.show;
@@ -31,7 +33,9 @@ export default function Banner() {
             <div className="banner-scroll">
               <p className="scroll-text">scroll down</p>
               <a href="#footer">
-                <button className="scroll-button">v</button>
+                <svg className="scroll-button">
+                  <use href={sprite + "#scroll-down"} />
+                </svg>
               </a>
             </div>
           </div>

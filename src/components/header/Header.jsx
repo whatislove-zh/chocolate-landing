@@ -1,9 +1,10 @@
 import React, { useRef, useState } from "react";
 import logo from "../../assets/logo.svg";
-import burger from "../../assets/menu-03.svg";
 import Navigation from "./Navigation";
 import Socials from "./Socials";
 import AsideMenu from "./AsideMenu";
+
+import sprite from "../../assets/icons.svg";
 
 export default function Header() {
   const [menuWidth, setMenuWidth] = useState(0);
@@ -22,12 +23,15 @@ export default function Header() {
           </a>
           <Navigation elementClass="header" />
           <Socials fill="white" stroke="black" elementClass="header" />
-          <img
+
+          <svg
             onClick={showMobileMenu}
             className="header-burger"
-            src={burger}
-            alt="burger-menu"
-          />
+            height="32px"
+            width="32px"
+          >
+            <use href={sprite + "#burger-menu"} />
+          </svg>
         </div>
       </div>
       <AsideMenu menuWidth={menuWidth} setMenuWidth={setMenuWidth} />
