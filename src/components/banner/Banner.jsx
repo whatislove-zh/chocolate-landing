@@ -31,8 +31,8 @@ export default function Banner() {
               </a>
             </div>
             <div className="banner-scroll">
-              <p className="scroll-text">scroll down</p>
-              <a href="#footer">
+              <a href="#footer" className="scroll-link banner-scroll">
+                <p className="scroll-text">scroll down</p>
                 <svg className="scroll-button">
                   <use href={sprite + "#scroll-down"} />
                 </svg>
